@@ -64,42 +64,47 @@
 // ]
 
 
-import axios from "axios";
+// import axios from "axios";
 
-export interface cryptoData{
-    id:string,
-    name:string,
-    symbol:string,
-    image:string,
-    current_price:number,
-    market_cap:number,
-    total_volume: number;
-    price_change_percentage_24h: number;
+// export interface cryptoData{
+//     id:string,
+//     name:string,
+//     symbol:string,
+//     image:string,
+//     current_price:number,
+//     market_cap:number,
+//     total_volume: number;
+//     price_change_percentage_24h: number;
 
 
-}
+// }
 
-export const fetchCryptoData=async()=>{
-    const params = {
-        vs_currency: "usd",
-        order: "market_cap_desc",
-        per_page: 50,
-        page: 1,
-        sparkline: false
-      };
-      const response=await axios.get('https://api.coingecko.com/api/v3/coins/markets',{params})
-    //   console.log(response)
-      return response.data;
-}
+// export const fetchCryptoData=async()=>{
+//     const params = {
+//         vs_currency: "usd",
+//         order: "market_cap_desc",
+//         per_page: 50,
+//         page: 1,
+//         sparkline: false
+//       };
+//       const response=await axios.get('https://api.coingecko.com/api/v3/coins/markets',{params})
+//        console.log(response)
+//       return response.data;
+// }
 
-export const getTopCryptos=async(req: any,res: any)=>{
-        try{
-            const cryptos=await fetchCryptoData();
-            console.log(cryptos);
-            res.json(cryptos);
+// export const getTopCryptos=async(req: any,res: any)=>{
+//         try{
+//             const cryptos=await fetchCryptoData();
+//             console.log(cryptos);
+//             res.json(cryptos);
 
-        }catch(err:any){
-            console.log("error in fetchinf top cryptos ");
-            res.status(500).json({ err: err.message });
-        }     
-}
+//         }catch(err:any){
+//             console.log("error in fetchinf top cryptos ");
+//             res.status(500).json({ err: err.message });
+//         }     
+// }
+
+
+
+
+
