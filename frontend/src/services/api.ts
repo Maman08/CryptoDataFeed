@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Crypto, CryptoAnalysis } from '../types/crypto';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8000/',
+  baseURL: 'https://cryptodatafeed-production.up.railway.app/'
 });
 
 export const getCryptos = async (): Promise<Crypto[]> => {

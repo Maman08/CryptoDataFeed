@@ -4,7 +4,7 @@ global:
 scrape_configs:
   - job_name: 'crypto_backend'
     static_configs:
-      - targets: ['localhost:8000'] 
+      - targets: ['https://cryptodatafeed-production.up.railway.app/']
 
   - job_name: 'node_exporter'
     static_configs:
