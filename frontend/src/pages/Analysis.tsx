@@ -20,7 +20,7 @@ export function Analysis() {
       {/* Embed Grafana Dashboard */}
       <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
         <iframe
-          src="http://localhost:3000/d/ce9ygntlxx8u8a/scrape-duration-seconds?utm_source=grafana_gettingstarted&orgId=1&from=now-5m&to=now&timezone=browser"
+          src="http://localhost:3000/d/febyl104kt1c0e/scape-duration?orgId=1&from=now-15m&to=now&timezone=browser"
           width="100%"
           height="600"
           frameBorder="0"
